@@ -1,0 +1,2 @@
+I wanted to print 'hacked'. I found out that eval() function evaluates a string of Python code.
+So, I called to os.system and inside it wrote echo 'hacked', because os.system execute the command (a string) in a subshell, it's printed 'hacked'.

@@ -1,0 +1,10 @@
+The input '::hacked' will work because the calculation of those indexs:
+ username_end = data.index(':')
+ password_end = data.index(':', username_end + 1)
+
+ In the condition of the if: 
+ user[:username_end] == data[:username_end]
+            and
+            user[username_end+1:password_end] == data[username_end+1:password_end]
+            
+It will comapre empty strings, and it's will return True from validate_script.

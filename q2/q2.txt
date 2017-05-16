@@ -1,0 +1,3 @@
+When you unpickle an object, the __reduce__ method is called. The first argument to __reduce__ is a callable, that is, a function. The next argument is a tuple of arguments for __reduce__. In this case, when Exploit is unpickled, os.system is called, and is given 'echo hacked' as the argument.
+
+Basically, by unpickling an object you don't know anything about, you're vulnerable to whatever the __reduce__ method does.
