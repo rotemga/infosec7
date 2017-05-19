@@ -1,0 +1,3 @@
+The q5.py program create file 'hack' that first is similar to example.json.
+The program create thread that need to change 'command':'echo cool' to 'echo hacked'. The verify method in run.py running a lot of time (after the program got the command and signature from the file).
+So, when the program is running, the thread can change the command to 'echo hacked' and execute_script function will run it.
