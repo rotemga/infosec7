@@ -1,0 +1,9 @@
+There is a different between find 'command' by doing data['command'] and re.search(r'"command": "(.*?)"', data).group(1).
+
+re.search(r'"command": "(.*?)"', data).group(1) find the regular expression that start with 'command'.
+
+data['command'] is the value of the key 'command'.
+
+So, I created a new key 'a' and in it I puted {'command':'hacked'} as a value, and I puted it before the key 'command' and set_sort=True.
+
+Now it will find the first 'command' in the value of 'a' key and will print 'hacked'.
